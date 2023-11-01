@@ -78,7 +78,7 @@ def identify_vn(df):
 train_df_vi, train_df_other = identify_vn(train_df)
 ```
 ```python
-mport re
+import re
 import string
 
 def preprocess_text(text):
@@ -403,6 +403,8 @@ for index, row in test_df.iterrows():
 accuracy = sum(torch.tensor(predictions) == torch.tensor(labels))/len(labels)
 print(f"Accuracy: {accuracy}")
 ```
+## References
+
 ```
 Accuracy: 0.8765000104904175
 ```
