@@ -43,5 +43,14 @@ train_df = load_data_from_path(folder_paths['train'])
 valid_df = load_data_from_path(folder_paths['valid'])
 test_df = load_data_from_path(folder_paths['test'])
 ```
+## Data preprocessing:
+For the NTC-SCV dataset, data preprocessing involves two steps:
+- Remove non-Vietnamese comments.
+- Clean the data. The data cleaning steps include:
+-- Removing HTML tags and URLs.
+-- Removing punctuation and numbers.
+-- Removing special characters, emoticons, etc.
+-- Normalizing whitespace.
+-- Converting text to lowercase.
 
 
